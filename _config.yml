@@ -25,7 +25,7 @@ github_username:  saltstream@saltstream.io
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: cayman
 plugins:
   - jekyll-feed
 
