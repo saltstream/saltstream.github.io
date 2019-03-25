@@ -1,0 +1,66 @@
+
+$ss_core: #6f8b91;
+
+// complementary of #6f8b91
+$ss_cdb: #453527;
+$ss_clb: #917f6f;
+$ss_clt: #c0d9de;
+$ss_cmd: $ss_core;
+$ss_cdk: #2e4145;
+
+// shades of 6f8b91
+$gray-100: #E2E8E9;
+$gray-200: #C5D1D3;
+$gray-300: #A9B9BD;
+$gray-400: #8CA2A7;
+$gray-500: $ss_core;
+$gray-600: #596F74;
+$gray-700: #435357;
+$gray-800: #2C383A;
+$gray-900: #161C1D;
+
+$grays: (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+);
+
+$body-bg:                   $gray-100;
+$body-color:                $ss_cdk;
+
+$primary:       $ss_cdb;
+$secondary:     $ss_clb;
+$success:       $ss_core;
+$info:          $ss_clb;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+);
+
+// Navbar
+$navbar-dark-color:                 rgba($white, .5);
+$navbar-dark-hover-color:           rgba($white, .75);
+$navbar-dark-active-color:          $white;
+$navbar-dark-disabled-color:        rgba($white, .25);
+$navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23");
+$navbar-dark-toggler-border-color:  rgba($white, .1);
+
+$text-muted:                  $gray-600 !default;
+

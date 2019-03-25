@@ -1,0 +1,61 @@
+{
+  "name": "saltstream-website",
+  "private": true,
+  "description": "Gatsby based website derived from a starter",
+  "version": "0.1.0",
+  "author": "Darrell Davis <ddavis@saltstream.io>",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gatsby": "^2.2.6",
+    "gatsby-image": "^2.0.34",
+    "gatsby-plugin-google-analytics": "^2.0.17",
+    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.10",
+    "gatsby-plugin-react-svg": "^2.1.1",
+    "gatsby-plugin-sharp": "^2.0.30",
+    "gatsby-plugin-typography": "^2.2.10",
+    "gatsby-source-filesystem": "^2.0.27",
+    "gatsby-transformer-json": "^2.1.11",
+    "gatsby-transformer-remark": "^2.3.8",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "popper.js": "^1.14.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.19",
+    "save": "^2.3.3",
+    "typography": "^0.16.19",
+    "typography-theme-stern-grove": "^0.16.19"
+  },
+  "devDependencies": {
+    "bootstrap-scss": "^4.3.1",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.16.4"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saltstream/saltstream.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saltstream/saltstream.github.io/issues"
+  }
+}
