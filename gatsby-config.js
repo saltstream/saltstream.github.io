@@ -4,6 +4,7 @@ module.exports = {
     description: `
       infrastructure automation by design
     `,
+    charset: 'UTF-8',
     lang: `en`,
     siteUrl: `saltstream.io`,
     author: {

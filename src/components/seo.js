@@ -25,12 +25,14 @@ const SEO = ({ title, description, lang, siteUrl }) => (
       return (
         <>
           <Helmet title={seo.title}>
-            <meta name="description" content={seo.description} />
             {seo.siteUrl && <meta property="og:url" content={seo.siteUrl} />}
             {seo.title && <meta property="og:title" content={seo.title} />}
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}
+            {seo.lang && (
+              <meta http-equiv="Content-Language" content={seo.lang} />
+              )}
           </Helmet>
         </>
       )

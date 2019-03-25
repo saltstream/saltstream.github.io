@@ -12,11 +12,11 @@ const Featurette = props => (
         <h2 className="featurette-heading">{props.feature.title}
           <span className="text-muted"> {props.feature.description}</span>
         </h2>
-        <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <p className="lead">This is just some static article text I put here to hold some space.</p>
       </div>
       <div className="col-md-5">
-        <Img title="{props.feature.title}"
-          alt="{props.feature.title}"
+        <Img title={props.feature.title}
+          alt={props.feature.title}
           fluid={props.feature.image.childImageSharp.fluid } />
       </div>
     </div>
