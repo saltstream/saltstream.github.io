@@ -1,13 +1,15 @@
 [
   {
-    "title": "Feature Heading",
-    "description": "This will amaze you!",
-    "image": "../images/chalk_future.jpg"
+    "title": "Now's the time...",
+    "description": "",
+    "image": "../images/chalk_future.jpg",
+    "text": "The most important thing you can do is start where you are."
   },
   {
-    "title": "Legacy Feature",
-    "description": "Adorable kids",
-    "image": "../images/kids_dock.jpg"
+    "title": "Are you still waiting?",
+    "description": "",
+    "image": "../images/kids_dock.jpg",
+    "text": "I don't think that fish is going to catch itself..."
   }
 ]
   

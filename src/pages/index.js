@@ -30,6 +30,7 @@ export const query = graphql`
         node {
           title
           description
+          text
           image {
             childImageSharp {
               fluid(

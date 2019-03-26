@@ -16,7 +16,7 @@ const Featurette = (props) => (
         <h2 className="featurette-heading">{props.feature.title}
           <span className="text-muted"> {props.feature.description}</span>
         </h2>
-        <p className="lead">This is just some static article text I put here to hold some space.</p>
+        <p className="lead">{props.feature.text} </p>
       </div>
       <div className={props.feature.reversed?(
           "col-md-5 order-md-1"
