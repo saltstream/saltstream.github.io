@@ -1,11 +1,11 @@
 import React from "react"
-import { graphql } from 'gatsby';
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Logo from '../images/logo.svg';
+import Logo from "../images/logo.svg"
 
 const Blog = ({ data }) => {
-  const { title } = data.markdownRemark.frontmatter;
-  const { html } = data.markdownRemark;
+  const { title } = data.markdownRemark.frontmatter
+  const { html } = data.markdownRemark
   return (
     <Layout>
       <h1 className="title">{title}</h1>
@@ -19,8 +19,8 @@ const Blog = ({ data }) => {
       <Logo />
       <Logo />
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query($id: String!) {
@@ -31,6 +31,6 @@ export const query = graphql`
       html
     }
   }
-`;
+`
 
-export default Blog;
+export default Blog

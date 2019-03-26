@@ -1,23 +1,21 @@
 import React from "react"
-import { graphql } from 'gatsby';
+import { graphql } from "gatsby"
 import Head from "../components/head"
 import Layout from "../components/layout"
 import Featurette from "../components/featurette"
 
-const Home = (props) => {
-  const features = props.data.allFeaturesJson.edges;
-  var isOdd = Boolean(1);
+const Home = props => {
+  const features = props.data.allFeaturesJson.edges
+  var isOdd = Boolean(1)
   return (
     <>
       <Head />
       <Layout>
         {features.map(edge => {
-          isOdd = !isOdd;
-          edge.node.reversed = isOdd;
-          return (
-            <Featurette feature={edge.node} />
-          )
-        })}        
+          isOdd = !isOdd
+          edge.node.reversed = isOdd
+          return <Featurette feature={edge.node} />
+        })}
       </Layout>
     </>
   )
@@ -33,9 +31,7 @@ export const query = graphql`
           text
           image {
             childImageSharp {
-              fluid(
-                maxWidth: 500
-              ) {
+              fluid(maxWidth: 500) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -44,6 +40,6 @@ export const query = graphql`
       }
     }
   }
-`;
+`
 
 export default Home

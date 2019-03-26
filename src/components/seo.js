@@ -21,7 +21,7 @@ const SEO = ({ title, description, lang, siteUrl }) => (
         description: description || defaultDescription,
         lang: lang || defaultLang,
         siteUrl: siteUrl || defaultUrl,
-    }
+      }
       return (
         <>
           <Helmet title={seo.title}>
@@ -32,7 +32,7 @@ const SEO = ({ title, description, lang, siteUrl }) => (
             )}
             {seo.lang && (
               <meta http-equiv="Content-Language" content={seo.lang} />
-              )}
+            )}
           </Helmet>
         </>
       )
