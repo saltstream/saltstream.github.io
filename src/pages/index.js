@@ -3,17 +3,21 @@ import { graphql } from 'gatsby';
 import Head from "../components/head"
 import Layout from "../components/layout"
 import Featurette from "../components/featurette"
-import Logo from '../images/logo.svg';
 
 const Home = (props) => {
   const features = props.data.allFeaturesJson.edges;
+  var isOdd = Boolean(1);
   return (
     <>
       <Head />
       <Layout>
-        {features.map(edge => (
-          <Featurette feature={edge.node} />
-        ))}        
+        {features.map(edge => {
+          isOdd = !isOdd;
+          edge.node.reversed = isOdd;
+          return (
+            <Featurette feature={edge.node} />
+          )
+        })}        
       </Layout>
     </>
   )
