@@ -7,21 +7,27 @@
     letter-spacing: -.05rem;
   }
     
+.featurette-image {
+  img {
+    -webkit-filter: opacity(.7);
+    filter: opacity(.7);
+  }
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 40em) {
+  .featurette-heading {
+      font-size: 50px;
+  }
+}
   
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
-  @media (min-width: 40em) {
-    .featurette-heading {
-        font-size: 50px;
-    }
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 2rem;
   }
-    
-  @media (min-width: 62em) {
-    .featurette-heading {
-      margin-top: 2rem;
-    }
-  }
-    
-  /* -------end customization-------- */
+}
+  
+/* -------end customization-------- */
   
   

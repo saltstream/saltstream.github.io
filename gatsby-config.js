@@ -52,7 +52,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 970,
+            },
+          },
+        ],
+      },
+    },
     'gatsby-plugin-react-svg',
     {
       resolve: `gatsby-source-filesystem`,

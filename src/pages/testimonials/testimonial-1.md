@@ -1,11 +1,11 @@
 ---
-relPath: "/testimonials/sweets"
-title: "Sweet Pandas Eating Sweets"
-date: "2017-08-10"
+title: "Hear it from those who know..."
+description: ""
+relPath: "testimonials/thekids"
+image: "../../images/kids_dock.jpg"
+date: "2018-10-10"
 ---
 
-Pandas are really sweet.
+The most important thing you can do is start where you are.
 
-Here's a video of a panda eating sweets.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4n0xNbfJLR8" frameborder="0" allowfullscreen></iframe>
+![alt text](../../images/chalk_future.jpg)

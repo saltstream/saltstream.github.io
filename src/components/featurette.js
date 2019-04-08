@@ -20,6 +20,7 @@ const Featurette = props => (
         className={props.feature.reversed ? "col-md-5 order-md-1" : "col-md-5"}
       >
         <Img
+          className="featurette-image"
           title={props.feature.title}
           alt={props.feature.title}
           fluid={props.feature.image.childImageSharp.fluid}

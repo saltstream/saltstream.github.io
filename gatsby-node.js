@@ -13,8 +13,8 @@ exports.createPages = ({ actions, graphql }) => {
         node {
           id
           frontmatter {
-            relPath
             title
+            relPath
             date(formatString: "DD MMMM YYYY")
           }
           excerpt
@@ -29,8 +29,8 @@ exports.createPages = ({ actions, graphql }) => {
         node {
           id
           frontmatter {
-            relPath
             title
+            relPath
             date(formatString: "DD MMMM YYYY")
           }
           excerpt

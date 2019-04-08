@@ -10,6 +10,12 @@
     "description": "",
     "image": "../images/kids_dock.jpg",
     "text": "I don't think that fish is going to catch itself..."
+  },
+  {
+    "title": "Here's an idea...",
+    "description": "",
+    "image": "../images/first_idea.jpg",
+    "text": "A little inspiration to get you started"
   }
 ]
   

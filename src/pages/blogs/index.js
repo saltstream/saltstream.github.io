@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Layout from "../../components/layout"
+import Img from "gatsby-image"
 
 const Blogs = (props) => {
   const blogs = props.data.allMarkdownRemark.edges;
@@ -22,6 +23,11 @@ const Blogs = (props) => {
             <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
               <div className="card blog blog-teaser">
                 <div className="card-content">
+                  <Img
+                    title={edge.node.frontmatter.title}
+                    alt={edge.node.frontmatter.title}
+                    fluid={edge.node.frontmatter.image.childImageSharp.fluid}
+                  />
                   <h2>
                     <Link to={edge.node.frontmatter.relPath}>{edge.node.frontmatter.title}</Link>
                   </h2>
@@ -47,7 +53,16 @@ export const query = graphql`
           excerpt
           frontmatter {
             title
+            description
             relPath
+            image {
+              childImageSharp {
+                fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            date
           }
         }
       }

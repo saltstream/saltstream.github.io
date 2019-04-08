@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Logo from "../images/logo.svg"
 
 const Blog = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter
@@ -10,14 +9,6 @@ const Blog = ({ data }) => {
     <Layout>
       <h1 className="title">{title}</h1>
       <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
-      <Logo />
-      <Logo />
-      <Logo />
-      <Logo />
-      <Logo />
-      <Logo />
-      <Logo />
-      <Logo />
     </Layout>
   )
 }
