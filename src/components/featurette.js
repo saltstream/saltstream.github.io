@@ -1,5 +1,7 @@
 import React from "react"
+import { Link } from "gatsby"
 import Img from "gatsby-image"
+
 //import Image from "../components/image"
 
 const Featurette = props => (
@@ -11,7 +13,7 @@ const Featurette = props => (
         className={props.feature.reversed ? "col-md-7 order-md-2" : "col-md-7"}
       >
         <h2 className="featurette-heading">
-          {props.feature.title}
+          <Link to={props.feature.relPath}>{props.feature.title}</Link>
           <span className="text-muted"> {props.feature.description}</span>
         </h2>
         <p className="lead">{props.feature.text} </p>

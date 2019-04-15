@@ -6,7 +6,7 @@ module.exports = {
     `,
     charset: 'UTF-8',
     lang: `en`,
-    siteUrl: `saltstream.io`,
+    siteUrl: `https://saltstream.io`,
     author: {
       name: 'Darrell Davis',
       minibio: `

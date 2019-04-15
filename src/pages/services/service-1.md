@@ -8,4 +8,4 @@ date: "2018-10-10"
 
 The most important thing you can do is start where you are.
 
-![alt text](../../images/chalk_future.jpg)
+![alt text](../../images/first_idea.jpg)

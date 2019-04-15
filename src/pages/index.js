@@ -8,16 +8,22 @@ const Home = props => {
   const features = props.data.allFeaturesJson.edges
   var isOdd = Boolean(1)
   return (
-    <>
+    <div className='homepage'>
       <Head />
       <Layout>
+        <h3 className='homepage-heading'>
+          This site and all it's content is under construction.
+        </h3>
+        <h3 className='homepage-heading'>
+          It largely serves as a playground for the time being as I experiment and learn.
+        </h3>
         {features.map(edge => {
           isOdd = !isOdd
           edge.node.reversed = isOdd
           return <Featurette feature={edge.node} />
         })}
       </Layout>
-    </>
+    </div>
   )
 }
 
@@ -29,6 +35,7 @@ export const query = graphql`
           title
           description
           text
+          relPath
           image {
             childImageSharp {
               fluid(maxWidth: 500) {

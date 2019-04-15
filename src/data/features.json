@@ -3,19 +3,22 @@
     "title": "Now's the time...",
     "description": "",
     "image": "../images/chalk_future.jpg",
-    "text": "The most important thing you can do is start where you are."
+    "text": "The most important thing you can do is start where you are.",
+    "relPath": "blogs/nowsthetime"
   },
   {
     "title": "Are you still waiting?",
     "description": "",
     "image": "../images/kids_dock.jpg",
-    "text": "I don't think that fish is going to catch itself..."
+    "text": "I don't think that fish is going to catch itself...",
+    "relPath": "testimonials/thekids"
   },
   {
     "title": "Here's an idea...",
     "description": "",
     "image": "../images/first_idea.jpg",
-    "text": "A little inspiration to get you started"
+    "text": "A little inspiration to get you started",
+    "relPath": "services/brightidea"
   }
 ]
   
