@@ -1,11 +1,11 @@
 import React from "react"
 import Header from "./header"
-import Footer from "./footer"
+import Footer from "./Footer/index"
 
 export default ({ children }) => (
   <div id="wrapper" className="wrapper">
-    <Header />
-    {children}
+    {/* <Header />
+    {children} */}
     <Footer />
   </div>
 )
