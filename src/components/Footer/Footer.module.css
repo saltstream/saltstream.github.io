@@ -1,0 +1,72 @@
+.root {
+    margin-top: 1rem;
+}
+
+.navbar {
+  color: $primary;
+  background: $secondary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 0.8rem;
+      color: #ffffff;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}  
+@media (min-width: 62em) {
+  .root {
+    margin-top: 2rem;
+  }
+}
+
+/* 
+---
+
+<Navbar
+className="footer"
+collapseOnSelect
+expand="lg"
+bg="primary"
+variant="dark"
+>
+<Navbar.Brand href="/">
+  <Logo />
+</Navbar.Brand>
+<Navbar.Collapse id="responsive-navbar-nav">
+  <Nav className="mr-auto">
+    <Nav.Link href="policy">Privacy</Nav.Link>
+    <span className="navbar-text">
+      © {new Date().getFullYear()} {props.data.site.siteMetadata.title}
+    </span>
+  </Nav>
+  <Nav className="justify-content-end">
+    <Nav.Link href="#home">Back to top</Nav.Link>
+  </Nav>
+</Navbar.Collapse>
+</Navbar>
+ */
